@@ -1,0 +1,153 @@
+body {
+  font-family: 'Calibri';
+  font-weight: 500;
+}
+section {
+  width: 55%;
+  margin: auto;
+}
+
+.popup {
+  width: 97%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding: 0 1.5%;
+  background-color: #03e7a9;
+  font-size: 17pt;
+  opacity: 0.8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+}
+.popup p {
+  font-weight: bold;
+}
+.popup span {
+  text-decoration: underline;
+  font-weight: normal;
+}
+.popup img {
+  width: 25px;
+  height: 25px;
+}
+
+.ferme_popup {
+  opacity: 0;
+  margin-top: -70px;
+  top: -70px;
+}
+
+.index {
+  display: none;
+}
+
+.share a {
+  text-decoration: underline;
+  margin-right: 10px;
+}
+
+.section_title {
+  display: grid;
+  grid-template-columns: 50% 45% 5%;
+}
+.section_title p:last-child {
+  font-size: 19pt;
+}
+
+.summary_content {
+  display: grid;
+  justify-content: space-between;
+  /*grid-template-columns: 50% 45% 5%;*/
+}
+.summary_content > p {
+  min-width: 90px;
+  height: fit-content;
+  padding:  10px 25px;
+  background-color: #f0f4f0;
+  grid-row: 1;
+  font-size: 15pt;
+}
+.summary_content div {
+  grid-row: 1;
+}
+.summary_content div p {
+  position: absolute;
+  top: 185px;
+}
+.summary_content img {
+  width: 100px;
+  border-radius: 50%;
+}
+button {
+  border: none;
+  background-color: #f0f4f0;
+  font-size: 15pt;
+  font-family: 'Calibri';
+  cursor: pointer;
+}
+
+
+.section_content.lang {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.langages {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.langage_seul {
+  display: grid;
+  grid-template-rows: 33% 33% 33%;
+  margin: 10px;
+  max-height: 300px;
+  max-width: 350px;
+}
+.langage_seul div:first-of-type {
+  font-size: 16pt;
+  font-weight: 700;
+}
+.langage_seul div:nth-child(odd) {
+  background-color: #f1f1f1;
+}
+.langage_seul div:nth-child(even) {
+  background-color: #e2eae5;
+}
+.langage_seul div {
+  padding: 15px;
+}
+
+.graphic_lang {
+  background-color: #f0f4f0;
+}
+
+div:has(.lang_overiew) {
+  display: flex;
+}
+.lang_overview {
+  width: fit-content;
+  padding: 10px;
+  margin: 10px;
+  background-color: #f0f4f0;
+}
+.lang_couleur {
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  border-radius: 50%;
+  float: right;
+}
+table {
+  width: 100%;
+}
+table tr:nth-child(odd) {
+  background-color: #e2eae5;
+}
+th, td {
+  padding: 10px;
+  margin: 10px;
+}
+
+/* Couleur Refresh : #03e7a9
+   Couleur autres cases : #e2eae5*/
